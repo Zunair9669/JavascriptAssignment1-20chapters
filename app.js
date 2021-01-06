@@ -1,4 +1,6 @@
-// ..........................................ALERT......................................
+// ......................................ALERT.(CHAPTER 1).....................................
+
+
 
 // alert("Welcome To My Website");
 // alert("Error! Please Enter a Valid Password");
@@ -8,7 +10,10 @@
 
 
 
-// ........................................VARIABLES FOR STRINGS......................................
+
+
+// ..............................VARIABLES FOR STRINGS...(CHAPTER 2)......................................
+
 
 
 // var username = "Zunair";
@@ -22,7 +27,8 @@
 // alert(age)
 // alert(work)
 
-// alert("Pizza\nPizz\nPiz\nPi\nP")
+// var p = "Pizza \nPizz \nPiz \nPi \nP";
+// alert(p);
 
 // var email= "My E-mail address is"
 //  var mail= "zunairuddin30@gmail.com"
@@ -41,7 +47,11 @@
 
 
 
-//........................................ VARIABLES FOR NUMBERS....................................
+
+
+//........................................ VARIABLES FOR NUMBERS..(CHAPTER 3)....................................
+
+
 
 
 // var age = "I am 17 Years Old";
@@ -57,7 +67,11 @@
 
 
 
-// ..........................VARIABLE NAMES: LEGAL & ILLEGAL...........................................
+
+
+// ..........................VARIABLE NAMES: LEGAL & ILLEGAL...(CHAPTER 4)...........................................
+
+
 
 
 // var name = "Zunair uddin", userName = "Zunair", age = 17;
@@ -74,7 +88,15 @@
 
 
 
-// ......................................MATH EXPRESSIONS...........................................
+
+
+
+// .................................MATH EXPRESSIONS(CHAPTER 5)...........................................
+
+
+
+
+
 
 // var a = 3;
 // var b = 2;
@@ -238,7 +260,10 @@
 
 
 
-// ...................................MATH EXPRESSIONS(CHAPTER 6)....................................
+// ...................................MATH EXPRESSIONS...(CHAPTERS 6-9)....................................
+
+
+
 
 
 // var a = 10;
@@ -309,7 +334,11 @@
 
 
 
-// .................................USER INPUT & CONDITIONAL STATEMENT.................................
+
+
+// .........................USER INPUT & CONDITIONAL STATEMENT (CHAPTERS 9-11).................................
+
+
 
 
 
@@ -472,24 +501,25 @@
 
 
 
+
+
 // ......................IF…ELSE & ELSE IF STATEMENT TESTING SET OF CONDITIONS..........................
+// .....................................(CHAPTERS 13-15).................................................
 
 
 
 
-// var ch = 
-
-// 	prompt("Enter any character");
-
-// 	if (ch>=65 && ch<=90)
-// 		alert("Character is a capital letter");
-// 	else if (ch>=97 && ch<=122)
-// 		alert("Character is a capital letter")
-// 	else if (ch>=48 && ch<=57)
-// 		alert("Character is a capital letter")
-// 	else if ((ch>0 && ch<=47)||(ch>=58 && ch<=64)||
-//                (ch>=91 && ch<=96)||(ch>=123 && ch<=127))
-// 		alert("Character is a capital letter")
+// var ch = prompt("Enter any number or string");
+// ch = ch.charCodeAt(0);
+// if(ch>=65 && ch<=90){
+//     alert("the given input is Uppercase letter")
+// }
+// if(ch>=97 && ch<=122){
+//     alert("the given input is Lowercae letter")
+// }
+// else{
+//     alert("The give input is Number")
+// }
 
 
 // var num1, num2;
@@ -523,7 +553,7 @@
 
 // var v = prompt("Enter a vowel")
 
-// if (v === "a" || "e" || "i" || "o" || "u") {
+// if (v === "a" || v === "e"|| v === "i"|| v === "o" || v === "u") {
 //     alert ("true")
 // }
 // else {
@@ -569,8 +599,20 @@
 //     alert ("Good night")
 // }
 
+
+
+
+
+
+// ..................................ARRAYS..(CHAPTERS 13-15).........................................
+
+
+
+
+
 // var s1= [];
-// var s2= [];
+// var s2= [{" ": 0, " " : 0}];
+
 // var stringarray = ["zunair", "uddin", "Khan"];
 // var numbersarray= [1,2,3,4,5];
 // var booleanarray1= 10>9;
@@ -582,6 +624,7 @@
 // var qua = [ "SSC", "HSC", "BCS","BS", "BCOM", "MS", "M Phil", "PhD"]
 // document.write("<h1> Qualifications</h1>" + qua[0] + "</br>" + qua[1] + "</br>" + qua[2] + "</br>"+ qua[3] + "</br>" + qua[4] + "</br>" + qua[5] + "</br>" + qua[6] + "</br>" + qua[7] + "</br>");
 
+
 // var stu = ["zunair", "ali", "owais"];
 // var marks= [450,420,440];
 // var totalmarks = 500;
@@ -589,21 +632,219 @@
 // document.write("Score of"+" " +stu[1]+ " "+"is"+ " " +marks[1]+ " "+" ."+"percentage"+ " "+marks[1]/totalmarks*100+"%" + "<br>");
 // document.write("Score of"+" " +stu[2]+ " "+"is"+ " " +marks[2]+ " "+" ."+"percentage"+ " "+marks[2]/totalmarks*100+"%");
 
-// var color = ["Red", "green", "blue", "yellow","orange"];
-// document.write(color+"<br>");
-// color.unshift(prompt("Enter any color you want to add"));
-// document.write(color+"<br>");
-// color.push(prompt("Enter any color you want to add at the end"))
-// document.write(color+"<br>");
-// color.unshift("Lime","Aqua");
-// document.write(color+ "<br>");
-// color.shift ();
-// document.write(color+ "<br>");
-// color.pop();
-// document.write(color+ "<br>");
-// color.pop();
-// document.write(color+ "<br>");
+
+
+// var colour= ["Blue", "Green", "Red"];
+// console.log(colour);
+// document.write(colour + "<br>")
+// colour.unshift(prompt("Enter any colour"));
+// console.log(colour)
+// document.write(colour + "<br>")
+// colour.push(prompt("Enter any colour to add it at the end"));
+// console.log(colour);
+// document.write(colour + "<br>")
+// colour.unshift("Black","White");
+// console.log(colour);
+// document.write(colour + "<br>")
+// colour.pop()
+// console.log(colour);
+// document.write(colour + "<br>")
+
+// colour.splice(prompt("where you want to add colour 0-3"),0,(prompt("enter what colour you want to add")))
+// console.log(colour);
+// document.write(colour + "<br>")
+
+// colour.splice(prompt("from which index you want to delete colour enter 0-2"),(prompt("Enter how many you want to delete")));
+// console.log(colour)
+// document.write(colour + "<br>")
+
+
+
+// var students = [320,350,202,109,450];
+// console.log(students);
+// var studentssorted = students.sort();
+// console.log(studentssorted)
+
+
+// var cities = ["Karachi","Hyderabad","Lahore","Islamabad","Quetta"];
+// console.log(cities);
+// var selectedcities = cities.slice(3,5);
+// console.log(selectedcities);
+
+
+
+// var arr = ["This" ,  "is" ,  "my" ,  "cat"];
+// console.log(arr);
+// var arrjoin = arr.join(" ");
+// console.log(arrjoin)
+
+
+
+// var  arr = ["Keyboard", "Mouse", "Printer", "Monitor"]
+// console.log(arr);
+// document.write(arr + "<br>")
+
+
+// var firstout= arr.shift()
+// console.log(firstout)
+// document.write(firstout+ "<br>")
+// var firstout= arr.shift()
+// console.log(firstout)
+// document.write(firstout+ "<br>")
+// var firstout= arr.shift()
+// console.log(firstout)
+// document.write(firstout+ "<br>")
+// var firstout= arr.shift()
+// console.log(firstout)
+// document.write(firstout+ "<br>")
+
+// arr.unshift("Table");
+// console.log(arr)
+// arr.unshift("Mobile");
+// console.log(arr)
+// arr.unshift("CPU");
+// console.log(arr);
+// arr.unshift("Laptop");
+// console.log(arr);
+// arr.unshift("Bat");
+// console.log(arr);
+
+
+
+// arr.push("Table");
+// console.log(arr);
+// arr.push("Mobile");
+// console.log(arr);
+// arr.push("CPU");
+// console.log(arr);
+// arr.push("Laptop");
+// console.log(arr);
+// arr.push("Bat");
+// console.log(arr);
+
+// arr.pop();
+// console.log(arr);
+// arr.pop();
+// console.log(arr)
+// arr.pop();
+// console.log(arr)
+// arr.pop();
+// console.log(arr)
+// arr.pop();
+// console.log(arr)
+
+
+// var arr = ["Apple", "Samsung", "Motorola", "Nokia", "Sony" , "Haier"];
+// console.log(arr);
+// document.write("<select>" + "<option>" + arr[0] + "</option>" +   "<option>" + arr[1] + "</option>"  + "<option>" + arr[2] + "</option>"  + "<option>" + arr[3] + "</option>"  + "<option>" + arr[4] + "</option>"  + "<option>" + arr[6] + "</option>" + "</select>");
 
 
 
 
+
+
+
+// ...................................ARRAYS AND LOOPS.....(CHHAPTERS 17-20)...................................
+
+
+
+
+// var arr = [[],[],[],[]];
+// var arr = [[0 , 1 , 2 , 3], [1,0,1,2],[2,1,0,1]];
+// console.log(arr);
+
+
+// arr[0].join(" ")
+// console.log(arr[0]);
+// document.write(arr[0].join(" ")+ "<br>")
+
+
+// arr[1].join(" ")
+// console.log(arr[1]);
+// document.write(arr[1].join(" ")+ "<br>")
+
+
+// arr[2].join(" ")
+// console.log(arr[2]);
+// document.write(arr[2].join(" "))
+
+
+// for(i = 1; i <= 10 ; i++){
+//     document.write(i + "<br>")
+// }
+
+
+// var a = parseInt(prompt("Enter Number to show it's multiplication Table"));
+// var b = parseInt(prompt("Enter the length of table"));
+// for(i=1 ; i <=b ; i++){
+//     document.write(a + "X" + i + "=" +a*i + "<br>")
+// }
+
+
+// var fruits = ["apple", "banana", "mango", "orange","strawberry"];
+// console.log(fruits);
+// for(i = 0 ; i<fruits.length;i++){
+//     document.write(fruits[i]+ "</br>")
+// }
+
+
+// for(i=1; i<=15;i++){
+//     document.write(i+ "<br>")
+// }
+
+
+// for(i=10; i>=1;i--){
+//     document.write(i+"<br>")
+// }
+
+
+// for(i = 0 ; i<=20 ; i+=2){
+//     document.write(i + "<br>")
+// }
+
+
+// for (i= 1 ; i<=19 ; i+=2){
+//     document.write(i + "<br>")
+// }
+
+
+// for(i = 2 ; i<=20 ; i+=2){
+//     document.write(i + "k" + "<br>")
+// }
+
+
+
+
+// var a = ["cake", "applepie","cookies", "chips","patties"]
+// var b = prompt("Enter item for search")
+
+// if(b===a[0] || b===a[1]||b===a[2]||b===a[3]||b===a[4]){
+//     alert(b + " " + "is available at Index"+ " " + a.indexOf(b)+ " " +"in our bakery" )
+//     console.log(a.indexOf(b))
+// }
+
+// else{
+//     alert(b + " " + "is not available in our bakery")
+// }
+
+
+// var a = [24, 53, 78, 91, 12];
+// console.log(a)
+// console.log(Math.max(...a));
+// document.write ("<h3>Array Items :"+ " " + a + "</h3>"+ "<h3> The largest number is"+ " " + Math.max(...a) +"</h3>" )
+
+
+// var a = [24, 53, 78, 91, 12];
+// console.log(a)
+// console.log(Math.min(...a));
+// document.write ("<h3>Array Items :"+ " " + a + "</h3>"+ "<h3> The smallest number is"+ " " + Math.min(...a) +"</h3>" )
+
+
+// var a = 5;
+// for(i = 1 ; i <=20 ; i++){
+// document.write(a*i+",")
+// }
+
+
+
+// .......................................ALL ASSIGNMENTS COMPLETED.....................................
